@@ -7,7 +7,7 @@ Installation
 git clone https://github.com/Xvezda/vue-chrome-i18n.git
 cd vue-chrome-i18n
 yarn install
-yarn run build
+yarn run build  # dist/vue-chrome-i18n.js
 ```
 
 Usage
