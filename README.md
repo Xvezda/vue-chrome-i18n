@@ -27,7 +27,7 @@ then
 
 or
 
-`<a href="...">__MSG_messagename__</a>`
+`<a href="..." target="_blank" v-chrome-i18n>__MSG_messagename__</a>`
 
 
 Reference
