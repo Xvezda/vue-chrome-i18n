@@ -1,6 +1,7 @@
 Vue chrome i18n plugin
 ======================
 [![Actions Status](https://github.com/Xvezda/vue-chrome-i18n/workflows/Node%20CI/badge.svg)](https://github.com/Xvezda/vue-chrome-i18n/actions)
+
 Installation
 ------------
 ```sh
