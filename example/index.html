@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Xvezda">
+    <title>Vue chrome i18n example</title>
+    <script>
+      // Mocking chrome api
+      var chrome = window.chrome || {};
+      chrome.i18n = chrome.i18n || {};
+      chrome.i18n.getMessage = function(messageName) {
+        return messagesJson[messageName].message;
+      };
+      var messagesJson = {
+        "title": {
+          "message": "This is test title",
+          "description": "test title"
+        },
+        "foobar": {
+          "message": "Hello World!",
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../dist/vue-chrome-i18n.js"></script>
+    <script type="text/x-template" id="template-example">
+      <div>
+        <h1>
+          <!-- Component style -->
+          <vue-chrome-i18n>
+            <img src="https://secure.gravatar.com/avatar/abad3b40d9284d97b7df1f342f1e8942" alt="nice image">
+            __MSG_title__ <s>1234</s>
+          </vue-chrome-i18n>
+        </h1>
+        <hr>
+        <!-- Directive style -->
+        <h2 v-chrome-i18n>:) __MSG_foobar__ <small>:D</small></h2>
+      </div>
+    </script>
+    <script>
+      Vue.use(VueChromeI18n);
+      var vm = new Vue({
+        el: '#app',
+        template: '#template-example'
+      });
+    </script>
+  </body>
+</html>
