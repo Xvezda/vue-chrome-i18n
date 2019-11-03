@@ -1,6 +1,6 @@
 <!-- Copyright (C) 2019 Xvezda <https://xvezda.com/> -->
 <template>
-  <div v-if="show">
+  <div v-if="show" v-once>
     <slot></slot>
   </div>
 </template>
@@ -12,16 +12,20 @@ export default {
   props: {
     show: {
       type: Boolean,
-      default: true
+      default: true,
     },
     prehook: {
       type: Function,
-      default: context => { context }
+      default: context => {
+        context;
+      },
     },
     posthook: {
       type: Function,
-      default: context => { context }
-    }
+      default: context => {
+        context;
+      },
+    },
   },
   methods: {
     replaceMessage: function(elements) {
@@ -31,7 +35,7 @@ export default {
           element.text = element.text.replace(pattern, replacer);
         }
       }
-    }
+    },
   },
   beforeMount() {
     this.prehook(this);
@@ -41,5 +45,5 @@ export default {
     this.posthook(this);
     this.$emit('replaced', this);
   },
-}
+};
 </script>
