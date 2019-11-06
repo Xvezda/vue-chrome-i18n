@@ -1,0 +1,25 @@
+{
+  "name": "vue-chrome-i18n",
+  "version": "1.0.0",
+  "description": "Vue plugin for chrome extension internationalization",
+  "main": "index.js",
+  "repository": "https://github.com/Xvezda/vue-chrome-i18n",
+  "author": "Xvezda",
+  "bugs": {
+    "url": "https://github.com/Xvezda/vue-chrome-i18n",
+    "email": "xvezda@naver.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
