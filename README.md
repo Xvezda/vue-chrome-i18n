@@ -31,6 +31,11 @@ or
 `<a href="..." target="_blank" v-chrome-i18n>__MSG_messagename__</a>`
 
 
+Example
+-------
+https://xvezda.github.io/vue-chrome-i18n/example/
+
+
 Reference
 ---------
 - https://developer.chrome.com/extensions/i18n
