@@ -2,8 +2,8 @@ Vue chrome i18n plugin
 ======================
 [![Actions Status](https://github.com/Xvezda/vue-chrome-i18n/workflows/Node%20CI/badge.svg)](https://github.com/Xvezda/vue-chrome-i18n/actions)
 
-Installation
-------------
+Build
+-----
 ```sh
 git clone https://github.com/Xvezda/vue-chrome-i18n.git
 cd vue-chrome-i18n
