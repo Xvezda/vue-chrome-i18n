@@ -37,12 +37,6 @@ export default {
         if (element.children) this.replaceMessage(element.children);
         if (element.text && element.text.match(pattern)) {
           element.text = element.text.replace(pattern, replacer);
-          if (this.nl2br) {
-            this.$nextTick(() => {
-              let parent = element.elm.parentElement;
-              parent.innerHTML = nl2br(parent.innerHTML);
-            });
-          }
         }
       }
     },
@@ -51,6 +45,11 @@ export default {
     this.prehook(this);
     if (this.$slots.default) {
       this.replaceMessage(this.$slots.default);
+    }
+    if (this.nl2br) {
+      this.$nextTick(() => {
+        this.$el.innerHTML = nl2br(this.$el.innerHTML);
+      });
     }
     this.posthook(this);
     this.$emit('replaced', this);
