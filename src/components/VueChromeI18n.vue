@@ -6,13 +6,17 @@
 </template>
 
 <script>
-import { replacer, pattern } from '../utils';
+import { replacer, pattern, nl2br } from '../utils';
 
 export default {
   props: {
     show: {
       type: Boolean,
       default: true,
+    },
+    nl2br: {
+      type: Boolean,
+      default: false,
     },
     prehook: {
       type: Function,
@@ -33,6 +37,12 @@ export default {
         if (element.children) this.replaceMessage(element.children);
         if (element.text && element.text.match(pattern)) {
           element.text = element.text.replace(pattern, replacer);
+          if (this.nl2br) {
+            this.$nextTick(() => {
+              let parent = element.elm.parentElement;
+              parent.innerHTML = nl2br(parent.innerHTML);
+            });
+          }
         }
       }
     },

@@ -5,8 +5,17 @@ export function replacer(match, p1, offset, string) {
   return chrome.i18n.getMessage(p1);
 }
 
+export function nl2br(string) {
+  try {
+    return string.replace(/\n/g, '<br>');
+  } catch(e) {
+    return string;
+  }
+}
+
 
 export default {
-  replacer: replacer,
-  pattern: pattern
+  replacer,
+  pattern,
+  nl2br,
 }

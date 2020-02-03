@@ -11,7 +11,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "clean": "rm -rf dist/"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -21,5 +22,8 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "resolutions": {
+    "**/serialize-javascript": ">=2.1.1"
   }
 }
