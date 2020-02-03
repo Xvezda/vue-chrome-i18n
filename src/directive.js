@@ -9,5 +9,5 @@ export function bind(el, binding, vnode) {
 }
 
 export default {
-  bind: bind
+  bind,
 }

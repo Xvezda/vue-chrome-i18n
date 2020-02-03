@@ -9,15 +9,22 @@
       var chrome = window.chrome || {};
       chrome.i18n = chrome.i18n || {};
       chrome.i18n.getMessage = function(messageName) {
-        return messagesJson[messageName].message;
+        try {
+          return messagesJson[messageName].message;
+        } catch(e) {
+          return messageName;
+        }
       };
       var messagesJson = {
         "title": {
           "message": "This is test title",
           "description": "test title"
         },
-        "foobar": {
+        "hello": {
           "message": "Hello World!",
+        },
+        "foobar": {
+          "message": "foo\nbar\nbaz",
         }
       };
     </script>
@@ -37,14 +44,25 @@
         </h1>
         <hr>
         <!-- Directive style -->
-        <h2 v-chrome-i18n>:) __MSG_foobar__ <small>:D</small></h2>
+        <h2 v-chrome-i18n>:) __MSG_hello__ <small>:D</small></h2>
+        <hr>
+        <!-- Filter style -->
+        <h3>{{ foobar | chrome-i18n }}</h3>
+        <hr>
+        <!-- nl2br -->
+        <h4>
+          <vue-chrome-i18n nl2br>__MSG_foobar__</vue-chrome-i18n>
+        </h4>
       </div>
     </script>
     <script>
       Vue.use(VueChromeI18n);
       var vm = new Vue({
         el: '#app',
-        template: '#template-example'
+        template: '#template-example',
+        data: {
+          foobar: 'foobar',
+        },
       });
     </script>
   </body>
