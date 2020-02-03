@@ -37,10 +37,10 @@ or
 Options
 -------
 
-| Attribute | Description                      | Type                  |
-| --------- | -------------------------------- | --------------------- |
-| show      | Set visibility                   | Bool (Default: true)  |
-| nl2br     | Replace linefeeds to `<br>` tags | Bool (Default: false) |
+| Attribute | Description                      | Type    | Default |
+| --------- | -------------------------------- | ------- | ------- |
+| show      | Set visibility                   | Boolean | true    |
+| nl2br     | Replace linefeeds to `<br>` tags | Boolean | false   |
 
 Example
 -------
