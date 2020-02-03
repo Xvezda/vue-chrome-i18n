@@ -30,6 +30,17 @@ or
 
 `<a href="..." target="_blank" v-chrome-i18n>__MSG_messagename__</a>`
 
+or
+
+`<div>{{ 'messagename' | chrome-i18n }}</div>`
+
+Options
+-------
+
+| Attribute | Description                      | Type                  |
+| --------- | -------------------------------- | --------------------- |
+| show      | Set visibility                   | Bool (Default: true)  |
+| nl2br     | Replace linefeeds to `<br>` tags | Bool (Default: false) |
 
 Example
 -------
