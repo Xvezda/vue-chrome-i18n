@@ -2,6 +2,7 @@ Vue chrome i18n plugin
 ======================
 [![Version](https://img.shields.io/npm/v/vue-chrome-i18n)](https://www.npmjs.com/package/vue-chrome-i18n)
 [![Actions Status](https://github.com/Xvezda/vue-chrome-i18n/workflows/Node%20CI/badge.svg)](https://github.com/Xvezda/vue-chrome-i18n/actions)
+[![License](https://img.shields.io/github/license/Xvezda/vue-chrome-i18n)](LICENSE)
 
 Install
 -------
