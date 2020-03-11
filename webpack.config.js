@@ -33,5 +33,10 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: path.resolve(__dirname),
+    compress: true,
+    port: 9000
+  }
 }
