@@ -2,6 +2,16 @@ Vue chrome i18n plugin
 ======================
 [![Actions Status](https://github.com/Xvezda/vue-chrome-i18n/workflows/Node%20CI/badge.svg)](https://github.com/Xvezda/vue-chrome-i18n/actions)
 
+Install
+-------
+```sh
+npm install --save vue-chrome-i18n
+
+# OR
+
+yarn add vue-chrome-i18n
+```
+
 Build
 -----
 ```sh
@@ -15,8 +25,8 @@ Usage
 -----
 ### HTML
 ```html
-<script src="...vue.js"></script>
-<script src="...vue-chrome-i18n.js"></script>
+<script src=".../vue.js"></script>
+<script src=".../vue-chrome-i18n.js"></script>
 <script>
 Vue.use(VueChromeI18n);  // Install plugin
 </script>
