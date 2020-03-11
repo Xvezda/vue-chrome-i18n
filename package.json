@@ -4,7 +4,7 @@
   "description": "Vue plugin for chrome extension internationalization",
   "main": "index.js",
   "repository": "https://github.com/Xvezda/vue-chrome-i18n",
-  "author": "Xvezda",
+  "author": "Xvezda <xvezda@naver.com> (https://xvezda.com)",
   "bugs": {
     "url": "https://github.com/Xvezda/vue-chrome-i18n",
     "email": "xvezda@naver.com"
