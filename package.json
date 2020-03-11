@@ -12,12 +12,14 @@
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "clean": "rm -rf dist/"
+    "clean": "rm -rf dist/",
+    "check": "standard"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
+    "standard": "^14.3.1",
     "vue-loader": "^15.7.2",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",

@@ -1,7 +1,6 @@
 /* Copyright (C) 2019 Xvezda <https://xvezda.com/> */
-var path = require('path');
-var webpack = require('webpack');
-const { VueLoaderPlugin } = require('vue-loader');
+var path = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -14,7 +13,7 @@ module.exports = {
     libraryTarget: 'umd'
   },
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.vue']
   },
   optimization: {
     minimize: true
@@ -35,4 +34,4 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin()
   ]
-};
+}
