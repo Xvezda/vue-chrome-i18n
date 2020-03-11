@@ -10,6 +10,14 @@
     "url": "https://github.com/Xvezda/vue-chrome-i18n",
     "email": "xvezda@naver.com"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-plugins",
+    "chrome-extensions",
+    "i18n",
+    "internationalization"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
