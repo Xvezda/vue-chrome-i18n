@@ -1,6 +1,6 @@
 {
   "name": "vue-chrome-i18n",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue plugin for chrome extension internationalization",
   "main": "./dist/vue-chrome-i18n.js",
   "module": "./dist/vue-chrome-i18n.js",
