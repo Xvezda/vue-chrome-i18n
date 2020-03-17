@@ -2,6 +2,8 @@
 logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Runtime data
 pids
@@ -9,7 +11,7 @@ pids
 *.seed
 
 # Dependency directories
-node_modules
+node_modules/
 
 # Optional npm cache directory
 .npm
@@ -17,6 +19,9 @@ node_modules
 # Github
 .github
 
+# Demo
+demo/
+
 # Whitelist build
-!dist
+!dist/
 
