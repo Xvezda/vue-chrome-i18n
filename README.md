@@ -56,7 +56,7 @@ Options
 
 Example
 -------
-https://xvezda.github.io/vue-chrome-i18n/example/
+https://xvezda.github.io/vue-chrome-i18n/demo/
 
 
 Reference
